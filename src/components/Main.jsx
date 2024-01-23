@@ -7,10 +7,10 @@ const Main = () => {
   return (
     <div id='main'>
       <div  className='w-full h-screen top-0 left-0'>
-      <div className='max-w-[1000px] m-auto h-full w-full flex flex-col justify-center sm:items-start items-center pl-4'>
+      <div className='max-w-[1000px] m-auto h-full w-full flex flex-col justify-center sm:items-start items-center'>
             <h3 className="pl-1 font-mono text-t3 text-2xl pb-6">Hi, my name is</h3>
-            <h1 className="pl-1 font-bold text-t1 sm:text-6xl text-5xl pb-4">Moiz Masood.</h1>
-            <h1 className="pl-1 font-bold text-t2 sm:text-6xl text-5xl pb-8 text-center">I build softwares and websites.</h1>
+            <h1 className="pl-1 font-bold text-t1 md:text-6xl text-5xl pb-4">Moiz Masood.</h1>
+            <h1 className="pl-1 font-bold text-t2 md:text-6xl text-5xl pb-8 text-center">I build softwares and websites.</h1>
             <h2 className="pl-1 font-semibold text-white text-2xl pb-8">I'm a{' '}
             <TypeAnimation
       sequence={[
