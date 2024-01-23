@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProjectItem = ({img, title, lang}) => {
+const ProjectItem = ({img, title, lang, link}) => {
   return (
     <div className='relative flex items-center justify-center h-auto w-full shadow-neon rounded-xl group hover:bg-gradient-to-b from-c4 to-c1'>
         <img src={img} alt={title} className='rounded-xl group-hover:opacity-10'/>
@@ -9,7 +9,7 @@ const ProjectItem = ({img, title, lang}) => {
                 {title}
             </h3>
             <p className='pb-4 pt-2 text-white text-center'>{lang}</p>
-            <a href='/'>
+            <a href={link}>
                 <p className='text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg'>More Info</p>
             </a>
         </div>
