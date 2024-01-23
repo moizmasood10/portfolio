@@ -9,19 +9,19 @@ const Contact = () => {
                   method="POST" 
                   encType='multipart/form-data'>
                 <div className='grid md:grid-cols-2 gap-16 w-full py-2'>
-                <div className='flex flex-col py-2'>
+                <div className='flex flex-col col-span-2 sm:col-span-1'>
                     <label className='text-white font-semibold uppercase text-md py-2'>Name</label>
                     <input className='border-2 rounded-lg p-3 flex border-gray-300' type='text' name='name'/>
                 </div>
-                <div className='flex flex-col py-2'>
+                <div className='flex flex-col col-span-2 sm:col-span-1'>
                     <label className='text-white font-semibold uppercase text-md py-2'>Email</label>
                     <input className='border-2 rounded-lg p-3 flex border-gray-300'  type='email' name='email'/>
                 </div>
-                <div className='flex flex-col py-2 col-span-2'>
+                <div className='flex flex-col col-span-2'>
                     <label className='text-white font-semibold uppercase text-md py-2'>Subject</label>
                     <input className='border-2 rounded-lg p-3 flex border-gray-300'  type='text' name='subject'/>
                 </div>
-                <div className='flex flex-col py-2 col-span-2'>
+                <div className='flex flex-col col-span-2'>
                     <label className='text-white font-semibold uppercase text-md py-2'>Message</label>
                     <textarea className='border-2 rounded-lg p-3 flex border-gray-300'  rows={10} name='message'/>
                 </div>
