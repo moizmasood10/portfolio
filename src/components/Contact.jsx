@@ -2,36 +2,35 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div id="contact" >
-        <div className='max-w-[1200px] m-auto md:pl-20 p-8 py-16'>
-            <h1 className='text-6xl font-bold text-center text-t1 pb-16'>Contact</h1>
-            <form action="https://getform.io/f/e643e1d4-d48a-4dca-b6ca-44105715dab0" 
-                  method="POST" 
-                  encType='multipart/form-data'>
-                <div className='grid md:grid-cols-2 gap-16 w-full py-2'>
+    <div id="contact">
+    <div className='max-w-[1200px] m-auto p-8'>
+        <h1 className='text-6xl text-center font-light text-t1 pb-12'>Get in Touch</h1>
+        <form action="https://getform.io/f/e643e1d4-d48a-4dca-b6ca-44105715dab0" 
+              method="POST" 
+              encType='multipart/form-data'>
+            <div className='grid md:grid-cols-2 gap-8 w-full'>
                 <div className='flex flex-col col-span-2 sm:col-span-1'>
-                    <label className='text-white font-semibold uppercase text-md py-2'>Name</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type='text' name='name'/>
+                    <input className='rounded-lg p-2 bg-black/30 border-2 border-c2 text-white font-mono' placeholder='Name' type='text' name='name'/>
                 </div>
                 <div className='flex flex-col col-span-2 sm:col-span-1'>
-                    <label className='text-white font-semibold uppercase text-md py-2'>Email</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300'  type='email' name='email'/>
+                    <input className='rounded-lg p-2 bg-black/30 border-2 border-c2 text-white font-mono' placeholder='Email' type='email' name='email'/>
                 </div>
                 <div className='flex flex-col col-span-2'>
-                    <label className='text-white font-semibold uppercase text-md py-2'>Subject</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300'  type='text' name='subject'/>
+                    <input className='rounded-lg p-2 bg-black/30 border-2 border-c2 text-white font-mono' placeholder='Subject' type='text' name='subject'/>
                 </div>
                 <div className='flex flex-col col-span-2'>
-                    <label className='text-white font-semibold uppercase text-md py-2'>Message</label>
-                    <textarea className='border-2 rounded-lg p-3 flex border-gray-300'  rows={10} name='message'/>
+                    <textarea className='rounded-lg p-2 bg-black/30 border-2 border-c2 text-white font-mono' placeholder='Write your message here' rows={10} name='message'/>
                 </div>
-                <button className='bg-transparent border-c3 border-4 font-semibold text-xl text-white mt-4 w-full p-4 rounded-lg col-span-2  hover:bg-c3 hover:text-white transition duration-300'>
-                    Submit
-                </button>
+                <div className='col-span-2 flex justify-center'>
+                    <button className='bg-transparent border-c3 border-4 font-semibold font-mono text-xl text-white mt-4 p-2 rounded-3xl w-1/2 hover:bg-c3 hover:text-white transition duration-300'>
+                        Submit
+                    </button>
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
+</div>
+
   )
 }
 

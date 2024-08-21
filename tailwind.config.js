@@ -24,7 +24,7 @@ export default {
       },
       boxShadow: {
         neon: "0 0 5px theme('colors.c2'), 0 0 20px theme('colors.c1')"
-      }
+      },
     },
   },
   plugins: [],

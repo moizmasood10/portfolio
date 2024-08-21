@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {AiOutlineMenu, AiOutlineHome, AiOutlineMail, AiOutlineProject} from 'react-icons/ai'
+import {AiOutlineMenu, AiOutlineHome, AiOutlineMail, AiOutlineProject, AiOutlineCodeSandbox} from 'react-icons/ai'
 import {GrProjects} from 'react-icons/gr'
 
 const Sidenav = () => {
@@ -22,6 +22,11 @@ const Sidenav = () => {
                         <span className='pl-4'>Home</span>
                     </a>
                     <a onClick={handleNav} 
+                        href="#technologies" class="w-[60%] flex justify-center items-center rounded-full shadow-lg shadow-c3 bg-transparent border-c3 border-4 m-8 p-8 cursor-pointer hover:scale-110 ease-in duration-200 text-white font-semibold text-2xl">
+                        <AiOutlineCodeSandbox size={24}/>
+                        <span className='pl-4'>Projects</span>
+                    </a>
+                    <a onClick={handleNav} 
                         href="#projects" class="w-[60%] flex justify-center items-center rounded-full shadow-lg shadow-c3 bg-transparent border-c3 border-4 m-8 p-8 cursor-pointer hover:scale-110 ease-in duration-200 text-white font-semibold text-2xl">
                         <AiOutlineProject size={24}/>
                         <span className='pl-4'>Projects</span>
@@ -42,17 +47,32 @@ const Sidenav = () => {
         }
 
 
-        <div className='sm:block hidden fixed top-[35%] right-0 z-10'>
-            <div className='flex flex-col'>
-                <a href="#main" className='rounded-full shadow-lg shadow-c2 bg-c1 cursor-pointer hover:scale-110 ease-in duration-200 m-4 p-4 text-4xl text-white'>
-                    <AiOutlineHome />
-                </a>
-                <a href="#projects" className='rounded-full shadow-lg shadow-c2 bg-c1 cursor-pointer hover:scale-110 ease-in duration-200 m-4 p-4 text-4xl text-white'>
-                    <GrProjects />
-                </a>
-                <a href="#contact" className='rounded-full shadow-lg shadow-c2 bg-c1 cursor-pointer hover:scale-110 ease-in duration-200 m-4 p-4 text-4xl text-white'>
-                    <AiOutlineMail />
-                </a>
+        <div className='sm:block hidden fixed top-[25%] right-0 z-10'>
+        <div className='flex flex-col'>
+            <a
+                href="#main"
+                className='flex justify-center items-center rounded-full shadow-lg shadow-c2 bg-c1 cursor-pointer hover:scale-110 ease-in duration-200 m-4 p-4 text-4xl text-white'
+            >
+                <AiOutlineHome />
+            </a>
+            <a
+                href="#technologies"
+                className='flex justify-center items-center rounded-full shadow-lg shadow-c2 bg-c1 cursor-pointer hover:scale-110 ease-in duration-200 m-4 p-4 text-4xl text-white'
+            >
+                <AiOutlineCodeSandbox size={40} />
+            </a>
+            <a
+                href="#projects"
+                className='flex justify-center items-center rounded-full shadow-lg shadow-c2 bg-c1 cursor-pointer hover:scale-110 ease-in duration-200 m-4 p-4 text-4xl text-white'
+            >
+                <GrProjects />
+            </a>
+            <a
+                href="#contact"
+                className='flex justify-center items-center rounded-full shadow-lg shadow-c2 bg-c1 cursor-pointer hover:scale-110 ease-in duration-200 m-4 p-4 text-4xl text-white'
+            >
+                <AiOutlineMail />
+            </a>
             </div>
         </div>
 
