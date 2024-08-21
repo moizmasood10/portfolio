@@ -6,6 +6,8 @@ import primero from '../assets/primero.jpg';
 import anpr from '../assets/anpr.jpg';
 import novacare from '../assets/novacare.png';
 import isharay from '../assets/isharay.png';
+import todo from '../assets/todo.png';
+
 
 
 
@@ -22,6 +24,14 @@ const Projects = () => {
           title='NovaCare' 
           lang='Laravel/Filament, JS, Tailwind, Stripe' 
           link='https://novacare.site' 
+          target='_blank' 
+          rel='noopener noreferrer' 
+        />
+        <ProjectItem 
+          img={todo} 
+          title='AI ToDo App' 
+          lang='React, FramerMotion, Gemini API' 
+          link='https://todo.moizmasood.us' 
           target='_blank' 
           rel='noopener noreferrer' 
         />
@@ -57,14 +67,14 @@ const Projects = () => {
           target='_blank' 
           rel='noopener noreferrer' 
         />
-        <ProjectItem 
+        {/* <ProjectItem 
           img={anpr} 
           title='Automatic Number Plate Recognition System' 
           lang='Python, OpenCV, EasyOCR' 
           link='https://github.com/moizmasood10/' 
           target='_blank' 
           rel='noopener noreferrer' 
-        />
+        /> */}
 
         </div>
     </div>
