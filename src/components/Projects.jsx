@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectItem from './ProjectItem';
 import ees from '../assets/ees.jpg';
 import flappy from '../assets/flappy.jpg';
-import primero from '../assets/primero.jpg';
+import primero from '../assets/primero.png';
 import anpr from '../assets/anpr.jpg';
 import novacare from '../assets/novacare.png';
 import isharay from '../assets/isharay.png';
@@ -30,7 +30,7 @@ const Projects = () => {
         <ProjectItem 
           img={todo} 
           title='AI ToDo App' 
-          lang='React, FramerMotion, Gemini API' 
+          lang='React, Gemini API' 
           link='https://todo.moizmasood.us' 
           target='_blank' 
           rel='noopener noreferrer' 
@@ -45,7 +45,7 @@ const Projects = () => {
         />
         <ProjectItem 
           img={primero} 
-          title='Primero Airways' 
+          title='Primero Avionics' 
           lang='HTML/CSS, JS, PHP, MySQL' 
           link='https://airline.novacare.site' 
           target='_blank' 
