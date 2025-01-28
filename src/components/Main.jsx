@@ -1,6 +1,7 @@
 import React from 'react'
 import {TypeAnimation} from 'react-type-animation'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { TbBrandFiverr } from "react-icons/tb";
 import CustomButton from './OpenPDF';
 
 const Main = () => {
@@ -27,14 +28,30 @@ const Main = () => {
       repeat={Infinity}
     />
     </h2>
-    <div className='ml-1 flex justify-between pt-6 max-w-[160px] w-full'>
-    <a href="https://www.linkedin.com/in/moizmasood10/" target="_blank" rel="noopener noreferrer">
-      <FaLinkedin className='cursor-pointer text-white' size={50}/>
-    </a>    
-    <a href="https://github.com/moizmasood10" target="_blank" rel="noopener noreferrer">
-      <FaGithub className='cursor-pointer text-white' size={50}/>
-    </a>    
-    </div>
+    <div className="ml-1 flex justify-between space-x-6 pt-6 max-w-[160px] w-full">
+  <a
+    href="https://www.linkedin.com/in/moizmasood10/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaLinkedin className="cursor-pointer text-white" size={50} />
+  </a>
+  <a
+    href="https://github.com/moizmasood10"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaGithub className="cursor-pointer text-white" size={50} />
+  </a>
+  <a
+    href="https://www.fiverr.com/mzx_21"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <TbBrandFiverr className="cursor-pointer text-white" size={50} />
+  </a>
+</div>
+
     <CustomButton />
     </div>
     </div>
