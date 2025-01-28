@@ -4,25 +4,25 @@ const Contact = () => {
   return (
     <div id="contact">
     <div className='max-w-[1200px] m-auto p-8'>
-        <h1 className='text-6xl text-center font-light text-t1 pb-12'>Get in Touch</h1>
+        <h1 className='pb-12 text-6xl font-light text-center text-t1'>Get in Touch</h1>
         <form action="https://getform.io/f/e643e1d4-d48a-4dca-b6ca-44105715dab0" 
               method="POST" 
               encType='multipart/form-data'>
-            <div className='grid md:grid-cols-2 gap-8 w-full'>
+            <div className='grid w-full gap-8 md:grid-cols-2'>
                 <div className='flex flex-col col-span-2 sm:col-span-1'>
-                    <input className='rounded-lg p-2 bg-black/30 border-2 border-c2 text-white font-mono' placeholder='Name' type='text' name='name'/>
+                    <input className='p-2 font-mono text-white border-2 rounded-lg bg-black/30 border-c2' placeholder='Name' type='text' name='name'/>
                 </div>
                 <div className='flex flex-col col-span-2 sm:col-span-1'>
-                    <input className='rounded-lg p-2 bg-black/30 border-2 border-c2 text-white font-mono' placeholder='Email' type='email' name='email'/>
+                    <input className='p-2 font-mono text-white border-2 rounded-lg bg-black/30 border-c2' placeholder='Email' type='email' name='email'/>
                 </div>
                 <div className='flex flex-col col-span-2'>
-                    <input className='rounded-lg p-2 bg-black/30 border-2 border-c2 text-white font-mono' placeholder='Subject' type='text' name='subject'/>
+                    <input className='p-2 font-mono text-white border-2 rounded-lg bg-black/30 border-c2' placeholder='Subject' type='text' name='subject'/>
                 </div>
                 <div className='flex flex-col col-span-2'>
-                    <textarea className='rounded-lg p-2 bg-black/30 border-2 border-c2 text-white font-mono' placeholder='Write your message here' rows={10} name='message'/>
+                    <textarea className='p-2 font-mono text-white border-2 rounded-lg bg-black/30 border-c2' placeholder='Write your message here' rows={10} name='message'/>
                 </div>
-                <div className='col-span-2 flex justify-center'>
-                    <button className='bg-transparent border-c3 border-4 font-semibold font-mono text-xl text-white mt-4 p-2 rounded-3xl w-1/2 hover:bg-c3 hover:text-white transition duration-300'>
+                <div className='flex justify-center col-span-2'>
+                    <button className='w-1/2 p-2 mt-4 font-mono text-xl font-semibold text-white transition duration-300 bg-transparent border-4 border-c3 rounded-3xl hover:bg-c3 hover:text-white'>
                         Submit
                     </button>
                 </div>

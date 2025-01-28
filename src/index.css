@@ -10,3 +10,11 @@
 #main, #projects, #work, #contact, #technologies, #projectsalt {
     background-color: #0a192f;
 }
+
+mySwiper .swiper-pagination-bullet {
+    @apply bg-white; /* Set the bullet background color to white */
+  }
+  
+  .mySwiper .swiper-pagination-bullet-active {
+    @apply bg-white; /* Set active bullet background color to white */
+  }
